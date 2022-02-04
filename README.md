@@ -18,13 +18,13 @@ Template repository for deploying SRS to any K8s service by GitHub Actions.
 
 * `KUBECONFIG` is the config of K8s, for example, the content of `cat $HOME/.kube/config`.
 
-**Step 3:** Run workflow from [Actions](https://github.com/18523999949/srs/actions/workflows/kubernetes.yml) to deploy to your K8s, for example, if your external IP is `81.70.125.89`:
+**Step 3:** Run workflow from [Actions](https://github.com/18523999949/srs/actions/workflows/kubernetes.yml) to deploy to your K8s, for example, if your external IP is `139.186.120.60`:
 
-* Website is http://81.70.125.89:8080
-* Publish RTMP to rtmp://81.70.125.89/live/livestream
-* Play RTMP from rtmp://81.70.125.89/live/livestream
-* Play HTTP-FLV from [http://81.70.125.89:8080/live/livestream.flv](http://81.70.125.89:8080/players/srs_player.html?stream=livestream.flv&&autostart=true)
-* Play HLS from [http://81.70.125.89:8080/live/livestream.m3u8](http://81.70.125.89:8080/players/srs_player.html?stream=livestream.m3u8&&autostart=true)
+* Website is http://139.186.120.60:8080
+* Publish RTMP to rtmp://139.186.120.60/live/livestream
+* Play RTMP from rtmp://139.186.120.60/live/livestream
+* Play HTTP-FLV from [http://139.186.120.60:8080/live/livestream.flv](http://139.186.120.60:8080/players/srs_player.html?stream=livestream.flv&&autostart=true)
+* Play HLS from [http://139.186.120.60:8080/live/livestream.m3u8](http://139.186.120.60:8080/players/srs_player.html?stream=livestream.m3u8&&autostart=true)
 
 Try to motify the [srs.yaml](srs.yaml), then push to your repository, your K8s will be updated automatically.
 
